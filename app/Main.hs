@@ -1,6 +1,10 @@
 module Main where
 
-import Lib
+import Config
+import Commands
+import Search
 
 main :: IO ()
-main = someFunc
+main = do
+  repo <- searchRepoByPod "JYVBaseView"
+  putStrLn repo

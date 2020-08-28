@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 08520827d67a681a9a5a8fc0533adfc2c1027a187bc22a2126ea649b5e2c24d0
+-- hash: 6644e69253a7a90322ad9c1cd89791ecd715d84d78b58ace2e59e87388c73a9b
 
 name:           EvilEye
 version:        0.1.0.0
@@ -27,13 +27,26 @@ source-repository head
 
 library
   exposed-modules:
+      Commands
+      Config
       Lib
+      Search
   other-modules:
       Paths_EvilEye
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , bytestring
+    , containers
+    , directory
+    , filepath
+    , hspec
+    , mtl
+    , pathwalk
+    , process
+    , text
+    , yaml
   default-language: Haskell2010
 
 executable EvilEye-exe
@@ -46,6 +59,16 @@ executable EvilEye-exe
   build-depends:
       EvilEye
     , base >=4.7 && <5
+    , bytestring
+    , containers
+    , directory
+    , filepath
+    , hspec
+    , mtl
+    , pathwalk
+    , process
+    , text
+    , yaml
   default-language: Haskell2010
 
 test-suite EvilEye-test
@@ -59,4 +82,14 @@ test-suite EvilEye-test
   build-depends:
       EvilEye
     , base >=4.7 && <5
+    , bytestring
+    , containers
+    , directory
+    , filepath
+    , hspec
+    , mtl
+    , pathwalk
+    , process
+    , text
+    , yaml
   default-language: Haskell2010
