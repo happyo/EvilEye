@@ -5,6 +5,7 @@ import Config
 import System.Directory.PathWalk
 import Control.Monad.Trans
 import Control.Monad.Writer
+import System.FilePath
 
 searchRepoByPod :: String -> IO String
 searchRepoByPod pod = do
@@ -14,17 +15,10 @@ searchRepoByPod pod = do
     if (isPodInRepo pod dirs)
       then return root
       else return ""
+  return $ takeBaseName repoName
 
-  return repoName
-
-  -- pathWalk "." $ \root dirs files -> do
-  --     putStrLn root
-  --     putStrLn $ "  dirs: " ++ show dirs
-  --     putStrLn $ "  files: " ++ show files
-  --     if (isPodInRepo pod dirs)
-  --       then return root
-  --       else
-
+searchGitUrlByPod :: String -> IO String
+searchGitUrlByPod pod =
 
 isPodInRepo :: String -> [String] -> Bool
 isPodInRepo pod repoPods = elem pod repoPods

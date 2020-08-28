@@ -12,6 +12,7 @@ import System.FilePath
 data Config = Config {
   workDir :: String,
   reposFolderName :: String,
+  podsFolderName :: String,
   privateRepos :: [String]
   } deriving (Eq, Show)
 
@@ -20,6 +21,7 @@ instance FromJSON Config where
     Config <$>
     v .:   "workDir"       <*>
     v .:   "reposFolderName"       <*>
+    v .:   "podsFolderName"       <*>
     v .:   "privateRepos"
   parseJSON _ = fail "Expected Object for Config value"
 
