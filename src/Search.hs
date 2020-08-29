@@ -17,8 +17,6 @@ searchRepoByPod pod = do
       else return ""
   return $ takeBaseName repoName
 
-searchGitUrlByPod :: String -> IO String
-searchGitUrlByPod pod =
 
 isPodInRepo :: String -> [String] -> Bool
 isPodInRepo pod repoPods = elem pod repoPods

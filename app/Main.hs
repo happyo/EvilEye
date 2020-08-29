@@ -3,8 +3,9 @@ module Main where
 import Config
 import Commands
 import Search
+import PodParser
 
 main :: IO ()
 main = do
-  repo <- searchRepoByPod "JYVBaseView"
-  putStrLn repo
+  contents <- readFile "haha.podspec"
+  haha contents

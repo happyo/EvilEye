@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 9d5ee37cb972798a483c7be0bda9712d31f1896d8b12c1b263fb54a00332e8a9
+-- hash: 57ccb049c1125853c4b430780bd077b309a21544cab53df29e1cb9f007e9c1ee
 
 name:           EvilEye
 version:        0.1.0.0
@@ -44,6 +44,7 @@ library
     , filepath
     , hspec
     , mtl
+    , parsec
     , pathwalk
     , process
     , text
@@ -66,6 +67,7 @@ executable EvilEye-exe
     , filepath
     , hspec
     , mtl
+    , parsec
     , pathwalk
     , process
     , text
@@ -89,6 +91,7 @@ test-suite EvilEye-test
     , filepath
     , hspec
     , mtl
+    , parsec
     , pathwalk
     , process
     , text
