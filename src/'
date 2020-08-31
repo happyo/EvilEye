@@ -74,12 +74,9 @@ lockParentPodLine :: Parser String
 lockParentPodLine = do
   string "  -"
   many $ char ' '
-  optional $ try $ char '\"'
-  parent <- many validChar
+  parent <- many $ (letter <|> char '/')
   many $ char ' '
-  optional $ try $ lockVersion
-  optional $ try $ char '\"'
-  optional $ try $ char ':'
+  optional lockVersion
   eol
   return parent
 
@@ -87,22 +84,20 @@ lockChildPodLine :: Parser String
 lockChildPodLine = do
   string "    -"
   many $ char ' '
-  optional $ try $ char '\"'
-  child <- many validChar
+  child <- many $ (letter <|> char '/')
   many $ char ' '
-  optional $ try $ lockVersion
-  optional $ try $ char '\"'
+  optional lockVersion
   eol
   return child
 
 validChar :: Parser Char
-validChar = alphaNum <|> oneOf "/_-=~|+."
+validChar = letter <|> oneOf "/_-"
 
 lockVersion :: Parser String
 lockVersion = do
   char '('
   version <- manyTill anyChar $ char ')'
-  optional $ try (char ':')
+  optional (char ':')
   return version
 
 eol :: Parser Char

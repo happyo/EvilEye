@@ -1,0 +1,17 @@
+PODS:
+  - GoogleUtilities/NSData+zlib (~> 6.0)
+  - AFNetworking/Reachability
+  - "AFNetworking/Reachability (~ 2.3.3)"
+  - FXBlurView (1.6.3)
+  - GoogleAppMeasurement (6.3.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/NSData+zlib (~> 6.0)
+    - GoogleUtilities/NSData+zlib (~> 6.0)
+    - GoogleUtilities/NSData+zlib (~> 6.0)
+
+DEPENDENCIES:
+asdfasdfasd sdf sd e

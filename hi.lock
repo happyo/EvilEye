@@ -1,0 +1,975 @@
+PODS:
+  - AFNetworking/NSURLConnection (2.6.3):
+  - AFNetworking/NSURLSession (2.6.3):
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AgoraRtcEngine_iOS (2.8.0)
+  - AMap2DMap (5.6.1):
+    - AMapFoundation (~> 1.4)
+  - AMapFoundation (1.6.3)
+  - AMapLocation (2.6.4):
+    - AMapFoundation (~> 1.6.1)
+  - AMapSearch (7.1.0):
+    - AMapFoundation (~> 1.4)
+  - AnimatedGIFImageSerialization (0.2.0)
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
+    - CocoaLumberjack/Default
+  - Crashlytics (3.10.7):
+    - Fabric (~> 1.7.11)
+  - EAIntroView (2.7.4):
+    - EARestrictedScrollView (~> 0.2.0)
+  - EARestrictedScrollView (0.2.0)
+  - EBPhotoPages_JY (1.0.0)
+  - EdsPush (0.1.1):
+    - JYFNetworking (~> 0.4.14)
+    - JYSBaseService (~> 0.1.6)
+  - EMFlutterKitDebug (0.1.0):
+    - EMFlutterKitDebug/debug (= 0.1.0)
+  - EMFlutterKitDebug/debug (0.1.0)
+  - EMNetworkService (0.1.0):
+    - EMNetworkService/ActivityService (= 0.1.0)
+    - EMNetworkService/BizService (= 0.1.0)
+    - EMNetworkService/ChannelService (= 0.1.0)
+    - EMNetworkService/ClassroomService (= 0.1.0)
+    - EMNetworkService/ColumService (= 0.1.0)
+    - EMNetworkService/CommonService (= 0.1.0)
+    - EMNetworkService/CourseDetailService (= 0.1.0)
+    - EMNetworkService/CourseRelatedService (= 0.1.0)
+    - EMNetworkService/CourseResourceService (= 0.1.0)
+    - EMNetworkService/EMJYRPCCall (= 0.1.0)
+    - EMNetworkService/EMVideoLiveService (= 0.1.0)
+    - EMNetworkService/EMZipkinTracker (= 0.1.0)
+    - EMNetworkService/HomePageService (= 0.1.0)
+    - EMNetworkService/KYService (= 0.1.0)
+    - EMNetworkService/MessageService (= 0.1.0)
+    - EMNetworkService/StudyPlanService (= 0.1.0)
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/ActivityService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/BizService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/ChannelService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/ClassroomService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/ColumService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/CommonService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/CourseDetailService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/CourseRelatedService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/CourseResourceService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/EMJYRPCCall (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/EMVideoLiveService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/EMZipkinTracker (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/HomePageService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/KYService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/MessageService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - EMNetworkService/StudyPlanService (0.1.0):
+    - JYRPC
+    - JYRPCGenCode
+  - Fabric (1.7.13)
+  - FBRetainCycleDetector (0.1.4)
+  - FirebaseAnalytics (6.3.0):
+    - FirebaseCore (~> 6.6)
+    - FirebaseInstallations (~> 1.1)
+    - GoogleAppMeasurement (= 6.3.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - nanopb (= 0.3.9011)
+  - FirebaseCore (6.6.3):
+    - FirebaseCoreDiagnostics (~> 1.2)
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+  - FirebaseCoreDiagnostics (1.2.1):
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleDataTransportCCTSupport (~> 1.3)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseInstallations (1.3.0):
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/Environment (~> 6.6)
+    - GoogleUtilities/UserDefaults (~> 6.6)
+    - PromisesObjC (~> 1.2)
+  - FLAnimatedImage (1.0.12)
+  - FLEX (2.4.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - FXBlurView (1.6.3)
+  - GoogleAppMeasurement (6.3.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleDataTransport (4.0.1)
+  - GoogleDataTransportCCTSupport (1.4.1):
+    - GoogleDataTransport (~> 4.0)
+    - nanopb (~> 0.3.901)
+  - GoogleUtilities/AppDelegateSwizzler (6.6.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.6.0):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.6.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.6.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.6.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.6.0)"
+  - GoogleUtilities/Reachability (6.6.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.6.0):
+    - GoogleUtilities/Logger
+  - iCarousel (1.8.1)
+  - JDStatusBarNotification (1.5.6)
+  - JsBridge (1.0.20)
+  - JsBridgeWK (1.0.11)
+  - JYFAudioPlayer (0.1.6)
+  - JYFDAtracker (0.1.0)
+  - JYFDownloadManager (0.0.1):
+    - JYFExternalDependencyKit/AFNetworking (~> 0.1.0)
+  - JYFExternalDependencyKit/AFNetworking (0.1.2):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+  - JYFi18nResource/Default (0.2.31)
+  - JYFIAPStoreKit (0.1.2)
+  - JYFNetworking (0.4.15):
+    - JYFExternalDependencyKit/AFNetworking (~> 0.1.0)
+    - libextobjc (~> 0.4.1)
+    - MJExtension
+  - JYFOpenSSL (0.2.0)
+  - JYFSNSOpenSDK (0.1.4):
+    - JYFSNSOpenSDK/Tencent (= 0.1.4)
+    - JYFSNSOpenSDK/Weibo (= 0.1.4)
+    - JYFSNSOpenSDK/Weixin (= 0.1.4)
+    - JYFSNSOpenSDK/Yixin (= 0.1.4)
+  - JYFSNSOpenSDK/Tencent (0.1.4)
+  - JYFSNSOpenSDK/Weibo (0.1.4):
+    - WeiboSDK (~> 3.1.3)
+  - JYFSNSOpenSDK/Weixin (0.1.4):
+    - WechatOpenSDK (= 1.8.6)
+  - JYFSNSOpenSDK/Yixin (0.1.4)
+  - JYFStatistics (0.1.0):
+    - JYFDAtracker
+    - JYFStatistics/4.0.0 (= 0.1.0)
+    - JYFStatistics/4.1.0 (= 0.1.0)
+    - JYFStatistics/4.2.0 (= 0.1.0)
+    - JYFStatistics/4.3.0 (= 0.1.0)
+    - JYFStatistics/4.4.0 (= 0.1.0)
+    - JYFStatistics/Core (= 0.1.0)
+  - JYFStatistics/4.0.0 (0.1.0):
+    - JYFDAtracker
+  - JYFStatistics/4.1.0 (0.1.0):
+    - JYFDAtracker
+  - JYFStatistics/4.2.0 (0.1.0):
+    - JYFDAtracker
+  - JYFStatistics/4.3.0 (0.1.0):
+    - JYFDAtracker
+  - JYFStatistics/4.4.0 (0.1.0):
+    - JYFDAtracker
+  - JYFStatistics/Core (0.1.0):
+    - JYFDAtracker
+  - JYFUIResource/Default (0.1.6)
+  - JYFUIResource/Mooc (0.1.6)
+  - JYFURLManager (0.1.5):
+    - JYFNetworking
+  - JYFUtils (0.2.20):
+    - KVOController (~> 1.1.0)
+    - MBProgressHUD (~> 0.9.2)
+    - MJRefresh (~> 3.1.12)
+    - NETransitionManager (~> 1.1.1)
+    - PureLayout (~> 3.0.1)
+    - SAMKeychain (~> 1.5.2)
+    - SDWebImage (~> 4.2.2)
+  - JYFVideoPlayer (0.2.17):
+    - JYFNetworking (~> 0.4.12)
+    - JYFUtils
+    - NELivePlayer (= 2.2.1)
+  - JYFYouDaoADSDK (0.1.1)
+  - JYKCodeReader (0.1.3)
+  - JYNOSSDK (0.2.0)
+  - JYRPC (0.1.1):
+    - JYFNetworking
+    - YYModel
+  - JYRPCGenCode (0.0.1):
+    - JYRPC
+    - JYRPCGenCode/ActivityService (= 0.0.1)
+    - JYRPCGenCode/BizService (= 0.0.1)
+    - JYRPCGenCode/ChannelService (= 0.0.1)
+    - JYRPCGenCode/ClassroomService (= 0.0.1)
+    - JYRPCGenCode/ColumnsService (= 0.0.1)
+    - JYRPCGenCode/CommonService (= 0.0.1)
+    - JYRPCGenCode/CourseDetailService (= 0.0.1)
+    - JYRPCGenCode/CourseRelatedService (= 0.0.1)
+    - JYRPCGenCode/CourseResourceService (= 0.0.1)
+    - JYRPCGenCode/CourseStudy (= 0.0.1)
+    - JYRPCGenCode/HomepageService (= 0.0.1)
+    - JYRPCGenCode/KYService (= 0.0.1)
+    - JYRPCGenCode/MessageService (= 0.0.1)
+    - JYRPCGenCode/StudyPlanService (= 0.0.1)
+    - JYRPCGenCode/VideoLiveService (= 0.0.1)
+    - JYRPCGenCode/VideoService (= 0.0.1)
+  - JYRPCGenCode/ActivityService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/BizService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/ChannelService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/ClassroomService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/ColumnsService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/CommonService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/CourseDetailService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/CourseRelatedService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/CourseResourceService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/CourseStudy (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/HomepageService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/KYService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/MessageService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/StudyPlanService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/VideoLiveService (0.0.1):
+    - JYRPC
+  - JYRPCGenCode/VideoService (0.0.1):
+    - JYRPC
+  - JYSBaseService (0.1.7):
+    - JYFNetworking (~> 0.4.3)
+    - MJExtension (~> 3.1.1)
+  - JYSLive (0.2.6):
+    - JYFNetworking (~> 0.4.11)
+    - JYSBaseService (~> 0.1.4)
+  - JYSLogger (0.1.2):
+    - CocoaLumberjack (~> 3.3.0)
+    - JYFUtils
+    - JYNOSSDK (~> 0.2.0)
+    - JYSBaseService
+    - libextobjc/EXTScope (~> 0.4.1)
+    - SSZipArchive (~> 1.1)
+  - JYSLoginService (0.2.6):
+    - JYFUtils (~> 0.2.0)
+    - JYSBaseService (~> 0.1.4)
+  - JYSOnDemandService (0.1.0):
+    - JYSBaseService (~> 0.1.4)
+  - JYSOrderKit (0.2.2):
+    - CocoaLumberjack (= 3.3.0)
+    - FMDB (~> 2.7.2)
+    - JYFIAPStoreKit (~> 0.1.0)
+    - JYFOpenSSL (= 0.2.0)
+    - JYSBaseService (~> 0.1.4)
+    - MBProgressHUD (~> 0.9.2)
+  - JYSStatics (0.3.3):
+    - JYSBaseService (~> 0.1.4)
+    - Reachability (~> 3.2)
+  - JYVAddressPicker (0.1.1):
+    - JYSBaseService (~> 0.1.4)
+    - PureLayout (~> 3.0.1)
+  - JYVDownloadManager (0.1.4):
+    - JYFUtils
+    - libextobjc/EXTScope (~> 0.4.1)
+    - PureLayout (~> 3.0.1)
+    - ReactiveCocoa (= 2.1.8)
+  - JYVLive (0.3.0):
+    - JYVLive/JYVLive (= 0.3.0)
+    - JYVLive/NIMAVChat (= 0.3.0)
+    - JYVLive/NIMKIT (= 0.3.0)
+    - JYVLive/NIMSDK (= 0.3.0)
+    - JYVLive/ThirdParty (= 0.3.0)
+  - JYVLive/JYVLive (0.3.0):
+    - FXBlurView (= 1.6.3)
+    - JYFi18nResource/Default (~> 0.2.1)
+    - JYFUIResource/Default (~> 0.1.6)
+    - JYFUtils (~> 0.2.0)
+    - JYFVideoPlayer (~> 0.2.14)
+    - JYSLive (~> 0.2.4)
+    - JYSLogger
+    - JYSStatics
+    - JYVLive/NIMKIT
+    - JYVLive/ThirdParty
+    - JYVUtils
+    - KVOController (~> 1.1.0)
+    - MJRefresh (~> 3.1.12)
+    - PureLayout (~> 3.0.1)
+    - Reachability (~> 3.2)
+  - JYVLive/NIMAVChat (0.3.0)
+  - JYVLive/NIMKIT (0.3.0):
+    - JYVLive/NIMAVChat
+    - JYVLive/NIMSDK
+    - M80AttributedLabel (~> 1.6.3)
+    - SDWebImage (~> 4.2.2)
+    - Toast (~> 3.0)
+    - TZImagePickerController (~> 1.9.0)
+  - JYVLive/NIMSDK (0.3.0)
+  - JYVLive/ThirdParty (0.3.0)
+  - JYVLogin (0.1.9):
+    - JYVLogin/EAccountApiSDK (= 0.1.9)
+    - JYVLogin/JYVLogin (= 0.1.9)
+    - JYVLogin/NAHTTPDNS (= 0.1.9)
+    - JYVLogin/NELoginSDK (= 0.1.9)
+    - JYVLogin/NTESQuickPass (= 0.1.9)
+    - JYVLogin/OAuth (= 0.1.9)
+    - JYVLogin/TYRZSDK (= 0.1.9)
+  - JYVLogin/EAccountApiSDK (0.1.9)
+  - JYVLogin/JYVLogin (0.1.9):
+    - JYFUtils (~> 0.2.0)
+    - JYSLogger (~> 0.1.0)
+    - JYSLoginService (~> 0.2.4)
+    - JYVLogin/EAccountApiSDK
+    - JYVLogin/NAHTTPDNS
+    - JYVLogin/NELoginSDK
+    - JYVLogin/NTESQuickPass
+    - JYVLogin/OAuth
+    - JYVLogin/TYRZSDK
+  - JYVLogin/NAHTTPDNS (0.1.9)
+  - JYVLogin/NELoginSDK (0.1.9)
+  - JYVLogin/NTESQuickPass (0.1.9)
+  - JYVLogin/OAuth (0.1.9)
+  - JYVLogin/TYRZSDK (0.1.9)
+  - JYVOnDemand (0.1.0):
+    - JYSOnDemandService (~> 0.1.0)
+    - JYVPlayer (~> 0.1.13)
+  - JYVPDFKit (0.1.0):
+    - JYVPDFKit/Core (= 0.1.0)
+  - JYVPDFKit/Core (0.1.0):
+    - JYFDownloadManager (~> 0.0.1)
+    - JYFUtils (= 0.2.20)
+    - KVOController (~> 1.1.0)
+    - PureLayout (~> 3.0.1)
+    - vfrReader_JY (= 0.1.1)
+  - JYVPlayer (0.1.15):
+    - JYFi18nResource/Default
+    - JYFUIResource/Default (~> 0.1.2)
+    - JYFUtils
+    - JYFVideoPlayer (~> 0.2.16)
+    - JYVUtils
+  - JYVPLVLive (0.1.0):
+    - JYVPLVLive/Core (= 0.1.0)
+    - JYVPLVLive/Mooc (= 0.1.0)
+    - JYVPLVLive/Service (= 0.1.0)
+  - JYVPLVLive/Core (0.1.0):
+    - JYFUtils (~> 0.2.20)
+    - JYVLive
+    - JYVUtils
+    - Masonry (~> 1.1.0)
+    - PolyvCloudClassSDK (= 0.9.0-beta)
+    - SDWebImage (= 4.2.2)
+  - JYVPLVLive/Mooc (0.1.0)
+  - JYVPLVLive/Service (0.1.0):
+    - JYRPC
+  - JYVScrollTabView (0.2.3):
+    - PureLayout (~> 3.0.1)
+  - JYVShare (0.1.4):
+    - JYFSNSOpenSDK
+    - JYVUtils (~> 0.1.12)
+  - JYVUtils (0.1.12):
+    - JYFUtils (~> 0.2.11)
+    - PureLayout (~> 3.0.2)
+    - Reachability (~> 3.2.0)
+    - "UIViewController+KeyboardAnimation"
+    - YYText (~> 1.0.7)
+  - Kiwi (2.4.0)
+  - KVOController (1.1.0)
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - "libextobjc/NSInvocation+EXT (= 0.4.1)"
+    - "libextobjc/NSMethodSignature+EXT (= 0.4.1)"
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - "libextobjc/NSInvocation+EXT (0.4.1)":
+    - libextobjc/RuntimeExtensions
+  - "libextobjc/NSMethodSignature+EXT (0.4.1)":
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
+  - LookinServer (1.0.0)
+  - lottie-ios (2.5.3)
+  - M80AttributedLabel (1.6.3)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Masonry (1.1.0)
+  - MBProgressHUD (0.9.2)
+  - MJExtension (3.1.2)
+  - MJRefresh (3.1.15.7)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - NELivePlayer (2.2.1)
+  - NETransitionManager (1.1.1)
+  - PolyvBusinessSDK (0.8.0-beta):
+    - PolyvFoundationSDK (= 0.7.0-beta)
+  - PolyvCloudClassSDK (0.9.0-beta):
+    - PolyvCloudClassSDK/Core (= 0.9.0-beta)
+    - PolyvCloudClassSDK/Player (= 0.9.0-beta)
+    - PolyvCloudClassSDK/ThirdPart (= 0.9.0-beta)
+  - PolyvCloudClassSDK/Core (0.9.0-beta):
+    - PolyvBusinessSDK (= 0.8.0-beta)
+  - PolyvCloudClassSDK/Player (0.9.0-beta):
+    - PolyvIJKPlayer_Dylib (~> 0.5.0)
+  - PolyvCloudClassSDK/ThirdPart (0.9.0-beta):
+    - AgoraRtcEngine_iOS (~> 2.8.0)
+    - Socket.IO-Client-Swift (~> 13.2.0)
+  - PolyvFoundationSDK (0.7.0-beta)
+  - PolyvIJKPlayer_Dylib (0.5.0)
+  - pop (1.0.7)
+  - PromisesObjC (1.2.9)
+  - PureLayout (3.0.2)
+  - QIYU_iOS_SDK (4.2.1)
+  - Reachability (3.2)
+  - ReactiveCocoa (2.1.8):
+    - ReactiveCocoa/Core (= 2.1.8)
+    - ReactiveCocoa/no-arc (= 2.1.8)
+  - ReactiveCocoa/Core (2.1.8):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.1.8)
+  - SAMKeychain (1.5.3)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
+  - SlackTextViewController (1.9.1)
+  - Socket.IO-Client-Swift (13.2.1):
+    - Starscream (~> 3.0.2)
+  - SQLiteRepairKit (1.1.1):
+    - WCDBOptimizedSQLCipher (= 1.1.1)
+  - SSZipArchive (1.8.1)
+  - Starscream (3.0.6)
+  - Toast (3.1.0)
+  - TTGTagCollectionView (1.6.1)
+  - TZImagePickerController (1.9.8)
+  - "UIViewController+KeyboardAnimation (1.3)"
+  - vfrReader_JY (0.1.1)
+  - WCDB (1.0.7):
+    - SQLiteRepairKit (= 1.1.1)
+    - WCDBOptimizedSQLCipher (= 1.1.1)
+  - WCDBOptimizedSQLCipher (1.1.1)
+  - WechatOpenSDK (1.8.6)
+  - WeiboSDK (3.1.3)
+  - XHLaunchAd (3.9.12):
+    - FLAnimatedImage (~> 1.0.12)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking/NSURLConnection (= 2.6.3)
+  - AFNetworking/NSURLSession (= 2.6.3)
+  - AFNetworking/Reachability (= 2.6.3)
+  - AFNetworking/Security (= 2.6.3)
+  - AFNetworking/Serialization (= 2.6.3)
+  - AMap2DMap (= 5.6.1)
+  - AMapLocation (= 2.6.4)
+  - AMapSearch (= 7.1.0)
+  - AnimatedGIFImageSerialization (= 0.2.0)
+  - CocoaLumberjack (= 3.3.0)
+  - Crashlytics (= 3.10.7)
+  - EAIntroView (= 2.7.4)
+  - EBPhotoPages_JY (~> 1.0.0)
+  - "EdsPush (from `ssh://git@g.hz.netease.com:22222/JY-iOS/EdsPush.git`, branch `feature/mooc_dev_4.6.0`)"
+  - "EMFlutterKitDebug (from `ssh://git@g.hz.netease.com:22222/JY-iOS/edu-mooc/emflutterkitdebug.git`)"
+  - EMNetworkService (from `EMNetworkService`)
+  - Fabric
+  - FirebaseAnalytics (= 6.3.0)
+  - FirebaseCore (= 6.6.3)
+  - FirebaseCoreDiagnostics (= 1.2.1)
+  - FirebaseCoreDiagnosticsInterop (= 1.2.0)
+  - FLEX (= 2.4.0)
+  - FXBlurView (= 1.6.3)
+  - GoogleDataTransport (= 4.0.1)
+  - GoogleDataTransportCCTSupport (= 1.4.1)
+  - iCarousel (= 1.8.1)
+  - JDStatusBarNotification (~> 1.5.6)
+  - JsBridge
+  - JsBridgeWK (= 1.0.11)
+  - "JYFAudioPlayer (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYFAudioPlayer.git`, branch `master`)"
+  - "JYFDAtracker (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYFDAtracker.git`, branch `master`)"
+  - "JYFDownloadManager (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYFDownloadManager.git`, branch `feature/mooc_develop`)"
+  - "JYFNetworking (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYFNetworking.git`, branch `feature/support_mooc_4.4.0`)"
+  - "JYFStatistics (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYFStatistics.git`, commit `d831f8d`)"
+  - "JYFUIResource/Default (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYFUIResource.git`, commit `8cbe22d`)"
+  - "JYFUIResource/Mooc (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYFUIResource.git`, commit `8cbe22d`)"
+  - JYFURLManager (= 0.1.5)
+  - JYFUtils (= 0.2.20)
+  - "JYFVideoPlayer (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYFVideoPlayer.git`, branch `feature/mooc_develop`)"
+  - JYFYouDaoADSDK (= 0.1.1)
+  - "JYKCodeReader (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYKCodeReader.git`, branch `feature/scan_in_album_20171201`)"
+  - JYRPCGenCode (from `JYRPCGenCode`)
+  - "JYSLive (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYSLive.git`, branch `feature/mooc_develop`)"
+  - "JYSLogger (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYSLogger.git`, branch `feature/mooc_develop`)"
+  - "JYSLoginService (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYSLoginService.git`, branch `mooc/mooc_dev_4.2.0`)"
+  - "JYSOrderKit (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYSOrderKit.git`, branch `feature/4_5_0_mooc_add_batch_order`)"
+  - JYSStatics (= 0.3.3)
+  - JYVAddressPicker (= 0.1.1)
+  - "JYVDownloadManager (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYVDownloadManager.git`, branch `feature/20170821_mooc_download_optimize`)"
+  - "JYVLive (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYVLive.git`, branch `mooc/mooc_dev`)"
+  - "JYVLogin (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYVLogin.git`, branch `mooc/mooc_dev_4.4.0`)"
+  - JYVOnDemand (= 0.1.0)
+  - "JYVPDFKit (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYVPDFKit.git`, commit `be5fc1b`)"
+  - "JYVPlayer (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYVPlayer.git`, branch `feature/mooc/mooc_develop`)"
+  - "JYVPLVLive (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYVPLVLive.git`, branch `feature/fix_chatroom_emoji`)"
+  - "JYVScrollTabView (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYVScrollTabView.git`, branch `feature/ModifyUI`)"
+  - "JYVShare (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYVShare.git`, commit `feature/QQ_SDK_Upgrade`)"
+  - "JYVUtils (from `ssh://git@g.hz.netease.com:22222/JY-iOS/JYVUtils.git`, branch `mooc/mooc_develop`)"
+  - Kiwi (~> 2.4.0)
+  - KVOController (~> 1.1.0)
+  - libextobjc/EXTScope (= 0.4.1)
+  - LookinServer (= 1.0.0)
+  - lottie-ios (= 2.5.3)
+  - MagicalRecord (= 2.3.2)
+  - MBProgressHUD (~> 0.9.2)
+  - MJRefresh (= 3.1.15.7)
+  - MLeaksFinder
+  - pop (= 1.0.7)
+  - PureLayout (~> 3.0.1)
+  - QIYU_iOS_SDK (~> 4.2.1)
+  - SDWebImage (= 4.2.2)
+  - SlackTextViewController (= 1.9.1)
+  - TTGTagCollectionView (= 1.6.1)
+  - "vfrReader_JY (from `ssh://git@g.hz.netease.com:22222/JY-iOS/edu-mooc/vfrReader_JY.git`, branch `feature/mooc_develop`)"
+  - WCDB (= 1.0.7)
+  - XHLaunchAd (= 3.9.12)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AgoraRtcEngine_iOS
+    - AMap2DMap
+    - AMapFoundation
+    - AMapLocation
+    - AMapSearch
+    - AnimatedGIFImageSerialization
+    - CocoaLumberjack
+    - Crashlytics
+    - EAIntroView
+    - EARestrictedScrollView
+    - Fabric
+    - FBRetainCycleDetector
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseInstallations
+    - FLAnimatedImage
+    - FLEX
+    - FMDB
+    - FXBlurView
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - iCarousel
+    - JDStatusBarNotification
+    - Kiwi
+    - KVOController
+    - libextobjc
+    - LookinServer
+    - lottie-ios
+    - M80AttributedLabel
+    - MagicalRecord
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - MLeaksFinder
+    - nanopb
+    - NELivePlayer
+    - PolyvBusinessSDK
+    - PolyvCloudClassSDK
+    - PolyvFoundationSDK
+    - PolyvIJKPlayer_Dylib
+    - pop
+    - PromisesObjC
+    - PureLayout
+    - QIYU_iOS_SDK
+    - Reachability
+    - ReactiveCocoa
+    - SAMKeychain
+    - SDWebImage
+    - SlackTextViewController
+    - Socket.IO-Client-Swift
+    - SQLiteRepairKit
+    - SSZipArchive
+    - Starscream
+    - Toast
+    - TTGTagCollectionView
+    - TZImagePickerController
+    - "UIViewController+KeyboardAnimation"
+    - WCDB
+    - WCDBOptimizedSQLCipher
+    - WechatOpenSDK
+    - WeiboSDK
+    - XHLaunchAd
+    - YYModel
+    - YYText
+  "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFoundationSpecs.git":
+    - JYFExternalDependencyKit
+    - JYFi18nResource
+    - JYFIAPStoreKit
+    - JYFOpenSSL
+    - JYFURLManager
+    - JYFUtils
+    - JYFYouDaoADSDK
+    - JYRPC
+  "ssh://git@g.hz.netease.com:22222/JY-iOS/JYSelfManagedThirdLibsSpecs.git":
+    - EBPhotoPages_JY
+    - JYFSNSOpenSDK
+    - JYNOSSDK
+    - NETransitionManager
+  "ssh://git@g.hz.netease.com:22222/JY-iOS/JYServiceSpecs.git":
+    - JsBridgeWK
+    - JYSBaseService
+    - JYSOnDemandService
+    - JYSStatics
+  "ssh://git@g.hz.netease.com:22222/JY-iOS/JYViewSpecs.git":
+    - JYVAddressPicker
+    - JYVOnDemand
+  "ssh://git@g.hz.netease.com:22222/ntes-onepiece-ios/CocoaPodsSpecs.git":
+    - JsBridge
+
+EXTERNAL SOURCES:
+  EdsPush:
+    :branch: feature/mooc_dev_4.6.0
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/EdsPush.git"
+  EMFlutterKitDebug:
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/edu-mooc/emflutterkitdebug.git"
+  EMNetworkService:
+    :path: EMNetworkService
+  JYFAudioPlayer:
+    :branch: master
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFAudioPlayer.git"
+  JYFDAtracker:
+    :branch: master
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFDAtracker.git"
+  JYFDownloadManager:
+    :branch: feature/mooc_develop
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFDownloadManager.git"
+  JYFNetworking:
+    :branch: feature/support_mooc_4.4.0
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFNetworking.git"
+  JYFStatistics:
+    :commit: d831f8d
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFStatistics.git"
+  JYFUIResource:
+    :commit: 8cbe22d
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFUIResource.git"
+  JYFVideoPlayer:
+    :branch: feature/mooc_develop
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFVideoPlayer.git"
+  JYKCodeReader:
+    :branch: feature/scan_in_album_20171201
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYKCodeReader.git"
+  JYRPCGenCode:
+    :path: JYRPCGenCode
+  JYSLive:
+    :branch: feature/mooc_develop
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYSLive.git"
+  JYSLogger:
+    :branch: feature/mooc_develop
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYSLogger.git"
+  JYSLoginService:
+    :branch: mooc/mooc_dev_4.2.0
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYSLoginService.git"
+  JYSOrderKit:
+    :branch: feature/4_5_0_mooc_add_batch_order
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYSOrderKit.git"
+  JYVDownloadManager:
+    :branch: feature/20170821_mooc_download_optimize
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVDownloadManager.git"
+  JYVLive:
+    :branch: mooc/mooc_dev
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVLive.git"
+  JYVLogin:
+    :branch: mooc/mooc_dev_4.4.0
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVLogin.git"
+  JYVPDFKit:
+    :commit: be5fc1b
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVPDFKit.git"
+  JYVPlayer:
+    :branch: feature/mooc/mooc_develop
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVPlayer.git"
+  JYVPLVLive:
+    :branch: feature/fix_chatroom_emoji
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVPLVLive.git"
+  JYVScrollTabView:
+    :branch: feature/ModifyUI
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVScrollTabView.git"
+  JYVShare:
+    :commit: feature/QQ_SDK_Upgrade
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVShare.git"
+  JYVUtils:
+    :branch: mooc/mooc_develop
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVUtils.git"
+  vfrReader_JY:
+    :branch: feature/mooc_develop
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/edu-mooc/vfrReader_JY.git"
+
+CHECKOUT OPTIONS:
+  EdsPush:
+    :commit: dcdf1d592533916fedde89b729f85010a40d992b
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/EdsPush.git"
+  EMFlutterKitDebug:
+    :commit: dbb08fd7457ead2d756aff3b4084523a59b66c9f
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/edu-mooc/emflutterkitdebug.git"
+  JYFAudioPlayer:
+    :commit: d12027cf37d3572b696d3ce32a26fee47ee2007c
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFAudioPlayer.git"
+  JYFDAtracker:
+    :commit: 0f26f5af8672bf7095d42fd46c2e07774065ecda
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFDAtracker.git"
+  JYFDownloadManager:
+    :commit: 96e8b2fa1c59780c92fdd3246b5944ff5ef5ca01
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFDownloadManager.git"
+  JYFNetworking:
+    :commit: c17f4e09622a5c819da8832f8b710ddb3f396602
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFNetworking.git"
+  JYFStatistics:
+    :commit: d831f8d
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFStatistics.git"
+  JYFUIResource:
+    :commit: 8cbe22d
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFUIResource.git"
+  JYFVideoPlayer:
+    :commit: 2f4bdc9339da1a62bd40e90cbd0a1f185cf8e17a
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFVideoPlayer.git"
+  JYKCodeReader:
+    :commit: 738f87fab8768549b0b7d492449351d49db5d0c6
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYKCodeReader.git"
+  JYSLive:
+    :commit: ee3d04d8a9db2296dee924dda690eb64af22a5b5
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYSLive.git"
+  JYSLogger:
+    :commit: 5f4862ee5eb080c6d22743b6d4bdc9d470de5be7
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYSLogger.git"
+  JYSLoginService:
+    :commit: d0634ff0059be130c3a3a3b512d1f95fe77f5ec7
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYSLoginService.git"
+  JYSOrderKit:
+    :commit: b8ac726f446e405092eca9654aa6f650f794a055
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYSOrderKit.git"
+  JYVDownloadManager:
+    :commit: 6be5662f4a8e9ac8c4b5a8ef84f0761e381c496a
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVDownloadManager.git"
+  JYVLive:
+    :commit: 3b9e837ab9e0c16c7492cc3624ec325e9aab7292
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVLive.git"
+  JYVLogin:
+    :commit: fff6a0b47dcdd9c3630b3b13de5e09bf6452bf54
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVLogin.git"
+  JYVPDFKit:
+    :commit: be5fc1b
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVPDFKit.git"
+  JYVPlayer:
+    :commit: 0f886251ad4c419d870b49110e0771f6a01e5d04
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVPlayer.git"
+  JYVPLVLive:
+    :commit: c3e5bc7692192c19ee46e2afb4104bd0c177c4f8
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVPLVLive.git"
+  JYVScrollTabView:
+    :commit: 5a8fc50549ae3090f38e86ec6de09493de336183
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVScrollTabView.git"
+  JYVShare:
+    :commit: feature/QQ_SDK_Upgrade
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVShare.git"
+  JYVUtils:
+    :commit: 2df98a820722667662c58aeae8abcf67d206280d
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYVUtils.git"
+  vfrReader_JY:
+    :commit: 1c1801846fc6b34df2902812bdc5b1ef834dc7a8
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/edu-mooc/vfrReader_JY.git"
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AgoraRtcEngine_iOS: 85810ba2f492646ab0eb20fbd8ca016b4b69002d
+  AMap2DMap: cac76bc057de18a1641f34df6b50bf5bc6b23571
+  AMapFoundation: 9ed923193b357ebb30a073e9fe255d3c24054d5a
+  AMapLocation: b4162db67f813508a14ee7e05c7ee4073785221d
+  AMapSearch: 6bd6d361c5eb00110e0bffa4acf88b7bb9f7e059
+  AnimatedGIFImageSerialization: b0f0cfe71eac1ee45a3d57ae533c23b8e6f29501
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
+  Crashlytics: ccaac42660eb9351b9960c0d66106b0bcf99f4fa
+  EAIntroView: 50b85eedf414260e61330070ffe5947e72493a62
+  EARestrictedScrollView: f86d61e16c61d3e93c84f8e96e83122a2a3b7631
+  EBPhotoPages_JY: 5f6b731942193b4fa3d9f00fa43ad82993b0a61d
+  EdsPush: cc6034e51ea780cc199e892eb8b36f58061165aa
+  EMFlutterKitDebug: 0977365712d841d31210007d0e124aa53dcebbd8
+  EMNetworkService: 736257a71d961bebe529dd54a72c6d4af5259390
+  Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  FirebaseAnalytics: 058d71e714a1a6804d9e0f25e3bb18e377a51579
+  FirebaseCore: 78276943ad85e616dfa54dafa6c89512987d9d60
+  FirebaseCoreDiagnostics: 2109d10c35e8289b1ee6cabf44d9ffb055620194
+  FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseInstallations: 6f5f680e65dc374397a483c32d1799ba822a395b
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FXBlurView: c6d23f3d35af2c6282296a2930f61c6e2c788d01
+  GoogleAppMeasurement: 39ecba10918b21c83877d392246157f65db351cf
+  GoogleDataTransport: 653963cf5be60fb59cf051e070f0836fdc305f81
+  GoogleDataTransportCCTSupport: 84e4d4bbab642f2e9d83ee65d78aca2b5527d314
+  GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
+  iCarousel: dace1cb858e3f4dc2614bee3201041247f82feda
+  JDStatusBarNotification: d5829a8f2f291b23b8a54b87fac8bf2549945a2f
+  JsBridge: 5b282fffe95abdc5235220d1f2ff30a751847ca5
+  JsBridgeWK: 13698027c8a1723389892af08e9cfb9b07873a1b
+  JYFAudioPlayer: 4696d508fccab79e714f33a16cc2f48fe231027f
+  JYFDAtracker: eeb58d8dc7f32bdd4a452f862b2a0b2f0e9ed0b4
+  JYFDownloadManager: 9ca050c2c95d371c11ea1d5e2c2091ab0c91c6ea
+  JYFExternalDependencyKit: 9b800253f94a56f4e506884f02112bebc2dd043b
+  JYFi18nResource: d6cea2206848d549744279e2ccb32215ad985351
+  JYFIAPStoreKit: b0d63e29d1c64bd193d320cf404a31de39d09eec
+  JYFNetworking: 0ba5e248987e84473cc3eccaeda9822e7229747b
+  JYFOpenSSL: 15715770f05e0faf47d611acba6b839452682182
+  JYFSNSOpenSDK: 5577b24b690b5586fe81356d10144e901e21854b
+  JYFStatistics: 9a22839f714bcd690436b6b1fe2f9f10fa95ed01
+  JYFUIResource: 707356fb2cba32af33d552d1c7d8dcbfdf1836c9
+  JYFURLManager: dd8f4dbc3b3a964e13b8d5b03a55153a2772739a
+  JYFUtils: 37ceccd9631c356e3f9046ac77e59d86a8bd738f
+  JYFVideoPlayer: d1799680dba105da7c197ab0aee88f8d568e0929
+  JYFYouDaoADSDK: eceb50aee8e8efe0b72e4ac3e0b177fc35642bd1
+  JYKCodeReader: a3d97fb90463b9b8cca38acb0e1480ab02e13054
+  JYNOSSDK: 81082b83100de20e5868cdb5f28a116840348197
+  JYRPC: 046abb6b01b139698dca7b31d5086a91154922ff
+  JYRPCGenCode: 97c9319eb843b608842df69a271502bf481e1388
+  JYSBaseService: 40439e181e8139bf9c40213236f68b3c5766b233
+  JYSLive: 1960b93e8868d11f6eb3b950932be397e2c8aa32
+  JYSLogger: 5a5111674b744d84d158eb321169bbb8ae401434
+  JYSLoginService: f716e9e5fa282534e24790a59982f338e0ca4aa0
+  JYSOnDemandService: 849c809272e88b2b8cefae57cba191c159c7c00d
+  JYSOrderKit: 7c08ca885c330311ba5e31a55fd2ee8f54a00a13
+  JYSStatics: f6ce888acb2c70fffad7b54363e02b33bc89b150
+  JYVAddressPicker: 16f4aac479b85efe94086104eb6a967bab5d92c3
+  JYVDownloadManager: 10ba1bba72acedce49233bb4e8f94b1b1986ea51
+  JYVLive: e7efb51216979e444d66ec14e67608e77de47222
+  JYVLogin: 6143d943b2ca67da6a2a273595b4f129153cd20c
+  JYVOnDemand: e8a4eb86a9a567cf940de41e3a654e40634d8d7d
+  JYVPDFKit: 64c649999a6b384bf9822a1871dc309913ded750
+  JYVPlayer: f1cb77a3fbc109ae8e4781984e769de757623e23
+  JYVPLVLive: af6bde7bc03f879a4b3173087af8c9c465af53bc
+  JYVScrollTabView: fe475a1a590f20d7fa0776705cc3575b8c9091cd
+  JYVShare: 68f54b76cefb46c5aabe47c539165e8516dccf66
+  JYVUtils: d0bd7443fa78fd5c2290f0fe2cce6065c72c430a
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  KVOController: 321b5fc59300fcaabd42c0f679baa7a27efbb2fd
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  M80AttributedLabel: d06543195d3e451d2ea62ad76d04aa9cea7661d4
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: 81e8e411ced318561dd09334b0c83d8227cef79c
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  NELivePlayer: 7604aad2268968eacafdb239e6528969d91a9aa5
+  NETransitionManager: 8f8aa019670bc369b90d8f389c7456ca66c26a76
+  PolyvBusinessSDK: cb769f93b4d6ca29a8f0ae618a9a75f5cabad3f6
+  PolyvCloudClassSDK: 86f80b652d64d6a995ec7fe8cc646d7b35fc2231
+  PolyvFoundationSDK: c94f869adb833ca743f18e92606ca2cf3cc363ba
+  PolyvIJKPlayer_Dylib: e2e9d867cbceeaed9566771824b0ba320255038f
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  QIYU_iOS_SDK: 9dc5cb1dee3abdccca56cc282ecbfc841e366680
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  SlackTextViewController: 6b0d1030c53937226fc5358f217af2a34fc211cf
+  Socket.IO-Client-Swift: b94943e2fb916fe2f95244b9ed21828634002280
+  SQLiteRepairKit: 4766f9edd22995c79ae414c95beacec2dd9ff961
+  SSZipArchive: 04547dfa448be5ed7ecbaf7eaf8a6e9eb9b42997
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  TTGTagCollectionView: 828087136810b786ce8c30c89acf3877cccb0383
+  TZImagePickerController: 3b9413ae5d049b1fdc5b0c720ad283f35b679a50
+  "UIViewController+KeyboardAnimation": 4c6000b4a2e450a6105f007f96bb7142aebed220
+  vfrReader_JY: 27f58ac5442c5099f8ff7e07017b198c6639681a
+  WCDB: 1728613a016ac34d78ceb87423189af2cb75d19a
+  WCDBOptimizedSQLCipher: f43c2f06d366a192d1125bbdbbe0bd209aab1f5f
+  WechatOpenSDK: 368ae03b72ee3ea1328c4f11326fbb5d2721d118
+  WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
+  XHLaunchAd: 6320f9c68732667323072fc3a5f104e40fbe9cfe
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 0d824aa41af4a96bdc6a0fefb948b201b8473e12
+
+COCOAPODS: 1.6.0

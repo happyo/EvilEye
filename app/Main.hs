@@ -7,5 +7,6 @@ import PodParser
 
 main :: IO ()
 main = do
-  contents <- readFile "haha.podspec"
+  contents <- readFile "hi.lock"
   haha contents
+  -- print $ getPodDependencies contents

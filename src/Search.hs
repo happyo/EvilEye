@@ -17,6 +17,11 @@ searchRepoByPod pod = do
       else return ""
   return $ takeBaseName repoName
 
+-- searchGitUrlByPod :: String -> IO String
+-- searchGitUrlByPod pod = do
+--   config <- readConfig
+--   goRepoDir config
+
 
 isPodInRepo :: String -> [String] -> Bool
 isPodInRepo pod repoPods = elem pod repoPods
