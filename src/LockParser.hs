@@ -46,8 +46,10 @@ parserLockPodInfo = do
   pods <- many podInfo
   -- manyTill anyChar $ string "CHECKOUT OPTIONS:"
   manyTill anyChar eof
-  return pods
+  return $ filter specifiedVersionPod pods
 
+specifiedVersionPod :: (String, [(String, String)]) -> Bool
+specifiedVersionPod (_, kvs) = null (filter (\(k, _) -> k == "branch" || k == "commit") kvs)
 
 podInfo :: Parser (String, [(String, String)])
 podInfo = do

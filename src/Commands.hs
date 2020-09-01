@@ -40,7 +40,10 @@ compareDiffVersionPods = do
   fileTwo <- readFile "B.lock"
   let podsOne = podsByDependencies $ getLockPodDependencies fileOne
       podsTwo = podsByDependencies $ getLockPodDependencies fileTwo
+      podsInfo = getLockPodInfo fileTwo
   mapM_ print $ filter (\(a, b) -> not (sameVersion a b)) $ same podsOne podsTwo
+  putStrLn "------"
+  print podsInfo
 
 same :: [Pod] -> [Pod] -> [(Pod, Pod)]
 same (x:xs) ys = if x `elemPod` ys
@@ -59,6 +62,7 @@ elemPod pod (x:xs) = if (name pod == name x)
   else elemPod pod xs
 
 getPodB :: Pod -> [Pod] -> Pod
+getPodB _ [] = Pod "" ""
 getPodB pod (x:xs) = if (name pod == name x)
   then x
   else getPodB pod xs
