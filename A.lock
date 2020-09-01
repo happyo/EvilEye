@@ -1,0 +1,371 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.9.1)
+  - CourseHome (0.1.0):
+    - CourseHome/Base (= 0.1.0)
+  - CourseHome/Base (0.1.0):
+    - AFNetworking
+    - JPCommentRelated_iOS
+    - JPKUI-iOS
+    - Masonry
+    - ReactiveCocoa (>= 2.4.7)
+    - SaleDetail_iOS
+    - SDWebImage
+    - YYCache
+    - YYModel
+  - CourseHome/Dict (0.1.0):
+    - CourseHome/DictCourseHome
+    - CourseHome/DictMyCourse
+    - CourseHome/DictPackageCourse
+  - CourseHome/DictCourseHome (0.1.0)
+  - CourseHome/DictMyCourse (0.1.0):
+    - CourseHome/Base
+    - JPBase
+  - CourseHome/DictPackageCourse (0.1.0)
+  - FLAnimatedImage (1.0.12)
+  - GBPing (1.5.1)
+  - JPBase (0.1.0):
+    - JPKUI-iOS
+    - Masonry
+  - JPCommentRelated_iOS (0.1.0):
+    - JPCommentRelated_iOS/All (= 0.1.0)
+  - JPCommentRelated_iOS/All (0.1.0):
+    - JPKUI-iOS
+    - Masonry
+    - MJPhotoBrowser
+    - ReactiveCocoa (>= 2.4.7)
+    - SDWebImage
+    - YYCache
+    - YYModel
+  - JPKUI-iOS (0.1.0):
+    - lottie-ios (= 2.5.3)
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh (= 3.2.0)
+    - SDWebImage
+    - SnapKit
+    - YDAuthorizationKit_iOS
+    - YDCommon/YDColor
+    - YDCommon/YDFont
+  - JSONModel (1.8.0)
+  - JYDicCourseModule (0.1.0):
+    - SaleDetail_iOS
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
+  - lottie-ios (2.5.3)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJPhotoBrowser (1.0.2):
+    - SDWebImage
+    - SVProgressHUD
+    - YLGIFImage
+  - MJRefresh (3.2.0)
+  - NimbusKit-AttributedLabel (1.0.0)
+  - NIMSDK (7.9.0)
+  - ObjectMapper (4.2.0)
+  - Reachability (3.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SaleDetail_iOS (0.1.0):
+    - Alamofire (~> 4.9.1)
+    - JPCommentRelated_iOS
+    - JPKUI-iOS
+    - JSONModel
+    - Masonry
+    - ReactiveCocoa (>= 2.4.7)
+    - SDWebImage
+    - YYModel
+  - SAMKeychain (1.5.3)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/GIF (4.4.8):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - SnapKit (4.2.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyBeaver (1.9.1)
+  - SwiftyJSON (5.0.0)
+  - SwViewCapture (1.0.7)
+  - Three20Navigator (0.1.2)
+  - WSLHTMLEntities (1.0.3)
+  - XBase (0.1.2):
+    - JSONModel
+    - MBProgressHUD
+    - Three20Navigator
+  - XLabel (0.1.2):
+    - NimbusKit-AttributedLabel
+  - YDAuthorizationKit_iOS (0.1.0)
+  - YDCommon (1.2.8):
+    - lottie-ios (~> 2.5.3)
+    - YDCommon/Core (= 1.2.8)
+  - YDCommon/Core (1.2.8):
+    - lottie-ios (~> 2.5.3)
+    - YDCommon/DateExtension
+  - YDCommon/DateExtension (1.2.8):
+    - lottie-ios (~> 2.5.3)
+  - YDCommon/FoundationExtension (1.2.8):
+    - lottie-ios (~> 2.5.3)
+    - SAMKeychain
+    - YDCommon/Core
+    - YDCommon/YDDebug
+  - YDCommon/UI (1.2.8):
+    - lottie-ios (~> 2.5.3)
+    - SnapKit
+    - SwViewCapture
+    - YDCommon/Core
+    - YDCommon/FoundationExtension
+    - YDCommon/UIKitExtension
+    - YDCommon/YDColor
+    - YDCommon/YDDebug
+    - YDCommon/YDFont
+  - YDCommon/UIKitExtension (1.2.8):
+    - Kingfisher (~> 5.14.1)
+    - lottie-ios (~> 2.5.3)
+    - SnapKit
+    - SwViewCapture
+    - YDCommon/Core
+    - YDCommon/YDNetwork
+  - YDCommon/YDCache (1.2.8):
+    - lottie-ios (~> 2.5.3)
+  - YDCommon/YDColor (1.2.8):
+    - lottie-ios (~> 2.5.3)
+    - YDCommon/Core
+  - YDCommon/YDDebug (1.2.8):
+    - lottie-ios (~> 2.5.3)
+    - SAMKeychain
+    - SwiftyBeaver
+    - YDCommon/DateExtension
+    - YDCommon/YDCache
+  - YDCommon/YDFont (1.2.8):
+    - lottie-ios (~> 2.5.3)
+  - YDCommon/YDMedia (1.2.8):
+    - lottie-ios (~> 2.5.3)
+    - YDCommon/YDMedia/YDAudio (= 1.2.8)
+    - YDCommon/YDMedia/YDVideo (= 1.2.8)
+  - YDCommon/YDMedia/YDAudio (1.2.8):
+    - Alamofire (~> 4.0)
+    - lottie-ios (~> 2.5.3)
+    - YDCommon/DateExtension
+    - YDCommon/UI
+    - YDCommon/UIKitExtension
+    - YDCommon/YDDebug
+  - YDCommon/YDMedia/YDVideo (1.2.8):
+    - lottie-ios (~> 2.5.3)
+  - YDCommon/YDNetwork (1.2.8):
+    - lottie-ios (~> 2.5.3)
+    - YDCommon/YDNetwork/HttpClient (= 1.2.8)
+    - YDCommon/YDNetwork/WithObjectMapper (= 1.2.8)
+  - YDCommon/YDNetwork/HttpClient (1.2.8):
+    - Alamofire (~> 4.0)
+    - lottie-ios (~> 2.5.3)
+    - Reachability
+    - SwiftyJSON
+    - YDCommon/FoundationExtension
+    - YDCommon/YDDebug
+  - YDCommon/YDNetwork/WithObjectMapper (1.2.8):
+    - lottie-ios (~> 2.5.3)
+    - ObjectMapper
+    - YDCommon/YDNetwork/HttpClient
+  - YDCommon/YDWKWebView (1.2.8):
+    - lottie-ios (~> 2.5.3)
+  - YDLiveSDK/NoSoda (0.0.1):
+    - GBPing
+    - YDLiveSDK/YDLive
+  - YDLiveSDK/YDLive (0.0.1):
+    - Masonry
+    - NIMSDK
+    - ReactiveCocoa
+    - WSLHTMLEntities (~> 1.0.3)
+    - YLGIFImage (~> 0.11)
+  - YLGIFImage (0.11)
+  - YYCache (1.0.4)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - "CourseHome (from `git@gitlab.corp.youdao.com:course/courseHome-ios.git`, branch `feature/dictPreSaleAFN4`)"
+  - "CourseHome/Dict (from `git@gitlab.corp.youdao.com:course/courseHome-ios.git`, branch `feature/dictPreSaleAFN4`)"
+  - "JPBase (from `git@gitlab.corp.youdao.com:luna-ios-framework/JPBase.git`, branch `dict`)"
+  - "JPCommentRelated_iOS (from `git@gitlab.corp.youdao.com:course/JPCommentRelated_iOS.git`, tag `jpk-v5.1.2`)"
+  - "JPKUI-iOS (from `git@gitlab.corp.youdao.com:course/JPKUI-iOS.git`, branch `dict`)"
+  - JYDicCourseModule (from `../`)
+  - Kingfisher (= 5.14.1)
+  - MBProgressHUD (= 1.1.0)
+  - "MJPhotoBrowser (from `git@gitlab.corp.youdao.com:course/MJPhotoBrowser.git`, tag `1.0.3`)"
+  - "ReactiveCocoa (from `git@gitlab.corp.youdao.com:course/ReactiveCocoa.git`, tag `2.5`)"
+  - "SaleDetail_iOS (from `git@gitlab.corp.youdao.com:course/SaleDetail_iOS.git`, branch `dict`)"
+  - SDWebImage
+  - SDWebImage/GIF
+  - SnapKit (= 4.2.0)
+  - XBase (from `https://gitlab.corp.youdao.com/luna-ios-framework/xbase.git`, tag `0.1.2_beta`)
+  - XLabel (~> 0.1.0)
+  - "YDAuthorizationKit_iOS (from `git@gitlab.corp.youdao.com:course/YDAuthorizationKit_iOS.git`, tag `jpk-v4.6.0`)"
+  - YDCommon (from `./developing_pods/YDCommon`)
+  - YDCommon/YDMedia (from `./developing_pods/YDCommon`)
+  - YDCommon/YDWKWebView (from `./developing_pods/YDCommon`)
+  - "YDLiveSDK/NoSoda (from `git@gitlab.corp.youdao.com:luna-ios-framework/ydlivesdk-v2.git`, branch `feature/ld_dict_presale`)"
+
+SPEC REPOS:
+  "git@gitlab.corp.youdao.com:luna-ios-framework/youdaospecrepository.git":
+    - SwViewCapture
+    - Three20Navigator
+    - XLabel
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Alamofire
+    - FLAnimatedImage
+    - GBPing
+    - JSONModel
+    - Kingfisher
+    - lottie-ios
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - NimbusKit-AttributedLabel
+    - NIMSDK
+    - ObjectMapper
+    - Reachability
+    - SAMKeychain
+    - SDWebImage
+    - SnapKit
+    - SVProgressHUD
+    - SwiftyBeaver
+    - SwiftyJSON
+    - WSLHTMLEntities
+    - YLGIFImage
+    - YYCache
+    - YYModel
+
+EXTERNAL SOURCES:
+  CourseHome:
+    :branch: feature/dictPreSaleAFN4
+    :git: "git@gitlab.corp.youdao.com:course/courseHome-ios.git"
+  JPBase:
+    :branch: dict
+    :git: "git@gitlab.corp.youdao.com:luna-ios-framework/JPBase.git"
+  JPCommentRelated_iOS:
+    :git: "git@gitlab.corp.youdao.com:course/JPCommentRelated_iOS.git"
+    :tag: jpk-v5.1.2
+  JPKUI-iOS:
+    :branch: dict
+    :git: "git@gitlab.corp.youdao.com:course/JPKUI-iOS.git"
+  JYDicCourseModule:
+    :path: "../"
+  MJPhotoBrowser:
+    :git: "git@gitlab.corp.youdao.com:course/MJPhotoBrowser.git"
+    :tag: 1.0.3
+  ReactiveCocoa:
+    :git: "git@gitlab.corp.youdao.com:course/ReactiveCocoa.git"
+    :tag: '2.5'
+  SaleDetail_iOS:
+    :branch: dict
+    :git: "git@gitlab.corp.youdao.com:course/SaleDetail_iOS.git"
+  XBase:
+    :git: https://gitlab.corp.youdao.com/luna-ios-framework/xbase.git
+    :tag: 0.1.2_beta
+  YDAuthorizationKit_iOS:
+    :git: "git@gitlab.corp.youdao.com:course/YDAuthorizationKit_iOS.git"
+    :tag: jpk-v4.6.0
+  YDCommon:
+    :path: "./developing_pods/YDCommon"
+  YDLiveSDK:
+    :branch: feature/ld_dict_presale
+    :git: "git@gitlab.corp.youdao.com:luna-ios-framework/ydlivesdk-v2.git"
+
+CHECKOUT OPTIONS:
+  CourseHome:
+    :commit: f09c71cdfcec1508ec3d8411060aca4e89ab39cf
+    :git: "git@gitlab.corp.youdao.com:course/courseHome-ios.git"
+  JPBase:
+    :commit: af56f4fa4419d3706f250eff62c6c47e36f011be
+    :git: "git@gitlab.corp.youdao.com:luna-ios-framework/JPBase.git"
+  JPCommentRelated_iOS:
+    :git: "git@gitlab.corp.youdao.com:course/JPCommentRelated_iOS.git"
+    :tag: jpk-v5.1.2
+  JPKUI-iOS:
+    :commit: 1413ccd700527f24f72704f414c081ef025d553b
+    :git: "git@gitlab.corp.youdao.com:course/JPKUI-iOS.git"
+  MJPhotoBrowser:
+    :git: "git@gitlab.corp.youdao.com:course/MJPhotoBrowser.git"
+    :tag: 1.0.3
+  ReactiveCocoa:
+    :git: "git@gitlab.corp.youdao.com:course/ReactiveCocoa.git"
+    :tag: '2.5'
+  SaleDetail_iOS:
+    :commit: 107694e132ffdf586b1d87e42d5df913fc30442c
+    :git: "git@gitlab.corp.youdao.com:course/SaleDetail_iOS.git"
+  XBase:
+    :git: https://gitlab.corp.youdao.com/luna-ios-framework/xbase.git
+    :tag: 0.1.2_beta
+  YDAuthorizationKit_iOS:
+    :git: "git@gitlab.corp.youdao.com:course/YDAuthorizationKit_iOS.git"
+    :tag: jpk-v4.6.0
+  YDLiveSDK:
+    :commit: 44fec81c784673fc719b057c25f7af6089cb53e2
+    :git: "git@gitlab.corp.youdao.com:luna-ios-framework/ydlivesdk-v2.git"
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CourseHome: 920633c746fa7481a95d4516397f8c82e3d6d466
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  GBPing: d7fb1b91990f1d2a0f07f72e0fe79e91ee9fc3ba
+  JPBase: d3d3bbc3db8d15a330b3c05e5ad4b5ed20fdd80d
+  JPCommentRelated_iOS: 40c4752ed97d4262dad0cdcdb355834b610e44fa
+  JPKUI-iOS: d3b89a28f7df2499166db9ee5438de92b04e9d3b
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  JYDicCourseModule: c1e8531bfaee4e5a61627803553fe6fc3e6c8a5c
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJPhotoBrowser: f55e8490231f44a78ca6455105a1c798a142c95f
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  NimbusKit-AttributedLabel: b07b1f99ba46801a1c0d32c43a3a044fdda46c15
+  NIMSDK: e914abd30cfd84a8e1883f11941490cb5bc340b3
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveCocoa: 18469260c27afde2d9b52613dc333d0cc7273a7e
+  SaleDetail_iOS: 14094dbdaa6e1a1eadf61f32f6c2b5f75818fd22
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyBeaver: a1f5691458561414bcfab51874b2b7445451602b
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  SwViewCapture: f985caca264cc20e4365260bd0cbbc5245b92a51
+  Three20Navigator: 6dde05cc01a3c7c72ad04bd47f305da576f1cb37
+  WSLHTMLEntities: cc5c6cb5572c027914aadc5110eda1348af2b195
+  XBase: aaab216b32c965460f98a8361eccda15817c2ed9
+  XLabel: 5f3ac8b00dd484e2a95deef1083df9f9930d6abc
+  YDAuthorizationKit_iOS: cfc34793627c7f62eca822ede404f41c710ba2e3
+  YDCommon: 74a666e288a99699ddf84db4164ba2023c4cdfc5
+  YDLiveSDK: 15de8c37e67720d75c8ca3f9e22713926875891a
+  YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 821b539a39067abc27c5e9d97b4dcc1808236ffa
+
+COCOAPODS: 1.9.3

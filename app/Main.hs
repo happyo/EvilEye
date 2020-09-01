@@ -8,5 +8,6 @@ import LockParser
 
 main :: IO ()
 main = do
-  updateDependencyCommand
+  -- updateDependencyCommand
   -- print $ getPodDependencies contents
+  compareDiffVersionPods

@@ -33,6 +33,43 @@ goRepoDir config = do
   let repoPath = homePath </> (workDir config) </> (reposFolderName config)
   setCurrentDirectory repoPath
 
+-- 比较两个lock文件中版本不同的库
+compareDiffVersionPods :: IO ()
+compareDiffVersionPods = do
+  fileOne <- readFile "A.lock"
+  fileTwo <- readFile "B.lock"
+  let podsOne = podsByDependencies $ getLockPodDependencies fileOne
+      podsTwo = podsByDependencies $ getLockPodDependencies fileTwo
+  mapM_ print $ filter (\(a, b) -> not (sameVersion a b)) $ same podsOne podsTwo
+
+same :: [Pod] -> [Pod] -> [(Pod, Pod)]
+same (x:xs) ys = if x `elemPod` ys
+                 then (x, getPodB x ys) : (same xs ys)
+                 else same xs ys
+same [] _ = []
+same _ [] = []
+
+sameVersion :: Pod -> Pod -> Bool
+sameVersion one two = version one == version two
+
+elemPod :: Pod -> [Pod] -> Bool
+elemPod _ [] = False
+elemPod pod (x:xs) = if (name pod == name x)
+  then True
+  else elemPod pod xs
+
+getPodB :: Pod -> [Pod] -> Pod
+getPodB pod (x:xs) = if (name pod == name x)
+  then x
+  else getPodB pod xs
+
+podsByDependency :: (Pod, [Pod]) -> [Pod]
+podsByDependency (parent, cs) = parent : cs
+
+podsByDependencies :: [(Pod, [Pod])] -> [Pod]
+podsByDependencies [] = []
+podsByDependencies (x:xs) = [(fst x)] ++ podsByDependencies xs
+
 -- 根据config里的配置下载所有相关pod，并切到对应分支
 updateDependencyCommand :: IO ()
 updateDependencyCommand = do
@@ -45,16 +82,17 @@ updateDependencyCommand = do
       lockPodDependencies = getLockPodDependencies contents
   putStrLn "--- dependencies ---"
   print lockPodDependencies
-  putStrLn "--- Asso ---"
-  let a1 = getAssociatedPods needUpdatePods lockPodDependencies
-      a2 = getAssociatedPods a1 lockPodDependencies
-      a3 = getAssociatedPods a2 lockPodDependencies
-  putStrLn "---"
-  print $ a1
-  print $ a2
-  print $ a3
-  putStrLn "---"
-  print $ getAll needUpdatePods lockPodDependencies
+
+  -- putStrLn "--- Asso ---"
+  -- let a1 = getAssociatedPods needUpdatePods lockPodDependencies
+  --     a2 = getAssociatedPods a1 lockPodDependencies
+  --     a3 = getAssociatedPods a2 lockPodDependencies
+  -- putStrLn "---"
+  -- print $ a1
+  -- print $ a2
+  -- print $ a3
+  -- putStrLn "---"
+  -- -- print $ getAll needUpdatePods lockPodDependencies
 
 getAll :: [String] -> [(String, [String])] -> [String]
 getAll u ds = nub $ getAllIter u ds []

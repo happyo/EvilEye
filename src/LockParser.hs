@@ -2,14 +2,24 @@ module LockParser where
 
 import Text.Parsec
 import Text.Parsec.String
+import Data.Char (isDigit
+                 )
+
+data Pod = Pod {
+  name :: String,
+  version :: String
+} deriving (Show, Eq)
+
+data PodDependency = PodDependency {
+  parentPod :: Pod,
+  childPods :: [Pod]
+} deriving (Show, Eq)
 
 haha :: String -> IO ()
 haha content = do
-  -- print $ parse parserLockDepencies "" content
   print $ parse parserLockPodInfo "" content
-  -- print $ parse lineInfo "" "   :git: \"adsfasdfasdfsadf.@sadfasdf\" \n"
 
-getLockPodDependencies :: String -> [(String, [String])]
+getLockPodDependencies :: String -> [(Pod, [Pod])]
 getLockPodDependencies contents = case parse parserLockDepencies "" contents of
   Left _ -> []
   Right r -> r
@@ -19,7 +29,7 @@ getLockPodInfo contents = case parse parserLockPodInfo "" contents of
   Left _ -> []
   Right r -> r
 
-parserLockDepencies :: Parser [(String, [String])]
+parserLockDepencies :: Parser [(Pod, [Pod])]
 parserLockDepencies = do
   string "PODS:"
   many $ char ' '
@@ -62,36 +72,36 @@ lineInfo = do
   return (tag, value)
 
 
-lockDependency :: Parser (String, [String])
+lockDependency :: Parser (Pod, [Pod])
 lockDependency = do
   parent <- lockParentPodLine
   childs <- option [] $ many (try lockChildPodLine)
   return (parent, childs)
 
-lockParentPodLine :: Parser String
+lockParentPodLine :: Parser Pod
 lockParentPodLine = do
   string "  -"
   many $ char ' '
   optional $ try $ char '\"'
   parent <- many validChar
   many $ char ' '
-  optional $ try $ lockVersion
+  version <- option "" $ try $ lockVersion
   optional $ try $ char '\"'
   optional $ try $ char ':'
   eol
-  return parent
+  return $ Pod parent version
 
-lockChildPodLine :: Parser String
+lockChildPodLine :: Parser Pod
 lockChildPodLine = do
   string "    -"
   many $ char ' '
   optional $ try $ char '\"'
   child <- many validChar
   many $ char ' '
-  optional $ try $ lockVersion
+  version <- option "" $ try $ lockVersion
   optional $ try $ char '\"'
   eol
-  return child
+  return $ Pod child version
 
 validChar :: Parser Char
 validChar = alphaNum <|> oneOf "/_-=~|+.@:"
