@@ -7,6 +7,7 @@ import System.FilePath
 import Control.Exception
 import LockParser
 import PodParser
+import Data.List
 
 testCommand :: IO ()
 testCommand = do
@@ -38,24 +39,41 @@ updateDependencyCommand = do
   config <- readConfig
   putStrLn "--- config ---"
   print config
+  -- contents <- readFile "te.lock"
   contents <- readFile "Podfile.lock"
   let needUpdatePods = updatePods config
       lockPodDependencies = getLockPodDependencies contents
   putStrLn "--- dependencies ---"
   print lockPodDependencies
   putStrLn "--- Asso ---"
-  print $ getAssociatedPods needUpdatePods lockPodDependencies
+  let a1 = getAssociatedPods needUpdatePods lockPodDependencies
+      a2 = getAssociatedPods a1 lockPodDependencies
+      a3 = getAssociatedPods a2 lockPodDependencies
+  putStrLn "---"
+  print $ a1
+  print $ a2
+  print $ a3
+  putStrLn "---"
+  print $ getAll needUpdatePods lockPodDependencies
 
+getAll :: [String] -> [(String, [String])] -> [String]
+getAll u ds = nub $ getAllIter u ds []
+
+getAllIter :: [String] -> [(String, [String])] -> [String] -> [String]
+getAllIter [] _ r = r
+getAllIter u ds r = getAllIter current ds (r ++ current)
+  where current = getAssociatedPods u ds
 
 getAssociatedPods :: [String] -> [(String, [String])] -> [String]
-getAssociatedPods needUpdates podDependencies = map (\podName ->
-                                                       findParentPod podName podDependencies) needUpdates
+getAssociatedPods needUpdates podDependencies = filter (\s -> (not (null s)))
+  $ needUpdates >>= (\podName ->
+                       findParentPod podName podDependencies)
 
 isDependency :: String -> (String, [String]) -> Bool
 isDependency podName dependency = elem podName $ snd dependency
 
-findParentPod :: String -> [(String, [String])] -> String
-findParentPod _ [] = ""
+findParentPod :: String -> [(String, [String])] -> [String]
+findParentPod _ [] = []
 findParentPod podName (d:ds) = if isDependency podName d
-  then fst d
+  then (fst d) : (findParentPod podName ds)
   else findParentPod podName ds
