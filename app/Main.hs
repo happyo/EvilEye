@@ -4,9 +4,9 @@ import Config
 import Commands
 import Search
 import PodParser
+import LockParser
 
 main :: IO ()
 main = do
-  contents <- readFile "hi.lock"
-  haha contents
+  updateDependencyCommand
   -- print $ getPodDependencies contents

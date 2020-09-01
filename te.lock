@@ -1,3 +1,4 @@
+
 PODS:
   - GoogleUtilities/NSData+zlib (~> 6.0)
   - AFNetworking/Reachability
@@ -15,3 +16,30 @@ PODS:
 
 DEPENDENCIES:
 asdfasdfasd sdf sd e
+
+EXTERNAL SOURCES:
+  EdsPush:
+    :branch: "feature/mooc_dev_4.6.0"
+    :branch: feature/mooc_dev_4.6.0
+    :branch: feature/mooc_dev_4.6.0
+    :branch: feature/mooc_dev_4.6.0
+    :branch: "feature/mooc_dev_4.6.0"
+  EdsPush:
+    :branch: "feature/mooc_dev_4.6.0"
+    :branch: feature/mooc_dev_4.6.0
+    :branch: feature/mooc_dev_4.6.0
+    :branch: feature/mooc_dev_4.6.0
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/EdsPush.git"
+  EMFlutterKitDebug:
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/EdsPush.git"
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/EdsPush.git"
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/edu-mooc/emflutterkitdebug.git"
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/EdsPush.git"
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/EdsPush.git"
+  EMNetworkService:
+    :path: EMNetworkService
+  JYFAudioPlayer:
+    :branch: master
+    :git: "ssh://git@g.hz.netease.com:22222/JY-iOS/JYFAudioPlayer.git"
+
+CHECKOUT OPTIONS:

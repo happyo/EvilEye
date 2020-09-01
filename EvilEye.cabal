@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 57ccb049c1125853c4b430780bd077b309a21544cab53df29e1cb9f007e9c1ee
+-- hash: 26b0a225bbf01492ea1a80560a7062767bb22626d99a9a18453430787e15a77a
 
 name:           EvilEye
 version:        0.1.0.0
@@ -30,6 +30,7 @@ library
       Commands
       Config
       Lib
+      LockParser
       PodParser
       Search
   other-modules:

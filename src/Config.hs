@@ -13,6 +13,7 @@ data Config = Config {
   workDir :: String,
   reposFolderName :: String,
   podsFolderName :: String,
+  updatePods :: [String],
   privateRepos :: [String]
   } deriving (Eq, Show)
 
@@ -22,6 +23,7 @@ instance FromJSON Config where
     v .:   "workDir"       <*>
     v .:   "reposFolderName"       <*>
     v .:   "podsFolderName"       <*>
+    v .:   "updatePods"       <*>
     v .:   "privateRepos"
   parseJSON _ = fail "Expected Object for Config value"
 
