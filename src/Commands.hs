@@ -38,12 +38,16 @@ compareDiffVersionPods :: IO ()
 compareDiffVersionPods = do
   fileOne <- readFile "A.lock"
   fileTwo <- readFile "B.lock"
-  let podsOne = podsByDependencies $ getLockPodDependencies fileOne
-      podsTwo = podsByDependencies $ getLockPodDependencies fileTwo
+  let dTwo = getLockPodDependencies fileTwo
+      podsOne = podsByDependencies $ getLockPodDependencies fileOne
+      podsTwo = podsByDependencies dTwo
       podsInfo = getLockPodInfo fileTwo
   mapM_ print $ filter (\(a, b) -> not (sameVersion a b)) $ same podsOne podsTwo
-  putStrLn "------"
+  putStrLn "--- Pod Info ---"
   print podsInfo
+  putStrLn "--- All ---"
+  print $ getAll ["SDWebImage"] dTwo podsInfo
+ 
 
 same :: [Pod] -> [Pod] -> [(Pod, Pod)]
 same (x:xs) ys = if x `elemPod` ys
@@ -81,11 +85,14 @@ updateDependencyCommand = do
   putStrLn "--- config ---"
   print config
   -- contents <- readFile "te.lock"
-  contents <- readFile "Podfile.lock"
+  contents <- readFile "B.lock"
   let needUpdatePods = updatePods config
       lockPodDependencies = getLockPodDependencies contents
+      podsInfo = getLockPodInfo contents
   putStrLn "--- dependencies ---"
   print lockPodDependencies
+  putStrLn "--- Pods Info ---"
+  print podsInfo
 
   -- putStrLn "--- Asso ---"
   -- let a1 = getAssociatedPods needUpdatePods lockPodDependencies
@@ -98,24 +105,36 @@ updateDependencyCommand = do
   -- putStrLn "---"
   -- -- print $ getAll needUpdatePods lockPodDependencies
 
-getAll :: [String] -> [(String, [String])] -> [String]
-getAll u ds = nub $ getAllIter u ds []
+getAll :: [String] -> [(Pod, [Pod])] -> [PodInfo] -> [String]
+getAll u ds ps = nub $ getAllIter u ds ps []
 
-getAllIter :: [String] -> [(String, [String])] -> [String] -> [String]
-getAllIter [] _ r = r
-getAllIter u ds r = getAllIter current ds (r ++ current)
-  where current = getAssociatedPods u ds
+getAllIter :: [String] -> [(Pod, [Pod])] -> [PodInfo] -> [String] -> [String]
+getAllIter [] _ _ r = r
+getAllIter u ds ps r = getAllIter current ds ps (r ++ current)
+  where current = getAssociatedPods u ds ps
 
-getAssociatedPods :: [String] -> [(String, [String])] -> [String]
-getAssociatedPods needUpdates podDependencies = filter (\s -> (not (null s)))
-  $ needUpdates >>= (\podName ->
-                       findParentPod podName podDependencies)
+getAssociatedPods :: [String] -> [(Pod, [Pod])] -> [PodInfo] -> [String]
+getAssociatedPods needUpdates podDependencies ps = filter (\s -> (not (null s)))
+  $ map name $ needUpdates >>= (\podName ->
+                                  if isSpecified podName ps
+                                  then findParentPod podName podDependencies ps
+                                  else [])
 
-isDependency :: String -> (String, [String]) -> Bool
-isDependency podName dependency = elem podName $ snd dependency
+isDependency :: String -> (Pod, [Pod]) -> Bool
+isDependency podName dependency = elem podName $ map name $ snd dependency
 
-findParentPod :: String -> [(String, [String])] -> [String]
-findParentPod _ [] = []
-findParentPod podName (d:ds) = if isDependency podName d
-  then (fst d) : (findParentPod podName ds)
-  else findParentPod podName ds
+specifiedVersionPod :: PodInfo -> Bool
+specifiedVersionPod p = null (filter (\(k, _) -> k == "branch" || k == "commit") kvs)
+  where kvs = _infos p
+
+isSpecified :: String -> [PodInfo] -> Bool
+isSpecified _ [] = True
+isSpecified pName (p:ps) = if pName == _podInfoName p
+  then specifiedVersionPod p
+  else isSpecified pName ps
+
+findParentPod :: String -> [(Pod, [Pod])] -> [PodInfo] -> [Pod]
+findParentPod _ [] _ = []
+findParentPod podName (d:ds) ps = if isDependency podName d
+  then (fst d) : (findParentPod podName ds ps)
+  else findParentPod podName ds ps

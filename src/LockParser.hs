@@ -15,6 +15,11 @@ data PodDependency = PodDependency {
   childPods :: [Pod]
 } deriving (Show, Eq)
 
+data PodInfo = PodInfo {
+  _podInfoName :: String,
+  _infos :: [(String, String)]
+} deriving (Show, Eq)
+
 haha :: String -> IO ()
 haha content = do
   print $ parse parserLockPodInfo "" content
@@ -24,7 +29,7 @@ getLockPodDependencies contents = case parse parserLockDepencies "" contents of
   Left _ -> []
   Right r -> r
 
-getLockPodInfo :: String -> [(String, [(String, String)])]
+getLockPodInfo :: String -> [PodInfo]
 getLockPodInfo contents = case parse parserLockPodInfo "" contents of
   Left _ -> []
   Right r -> r
@@ -38,27 +43,24 @@ parserLockDepencies = do
   manyTill anyChar eof
   return dependencies
 
-parserLockPodInfo :: Parser [(String, [(String, String)])]
+parserLockPodInfo :: Parser [PodInfo]
 parserLockPodInfo = do
   manyTill anyChar $ try $ string "EXTERNAL SOURCES:"
   many $ char ' '
   eol
-  pods <- many podInfo
+  pods <- many parserPodInfo
   -- manyTill anyChar $ string "CHECKOUT OPTIONS:"
   manyTill anyChar eof
-  return $ filter specifiedVersionPod pods
+  return pods
 
-specifiedVersionPod :: (String, [(String, String)]) -> Bool
-specifiedVersionPod (_, kvs) = null (filter (\(k, _) -> k == "branch" || k == "commit") kvs)
-
-podInfo :: Parser (String, [(String, String)])
-podInfo = do
+parserPodInfo :: Parser PodInfo
+parserPodInfo = do
   string "  "
   podName <- manyTill anyChar (char ':')
   many $ char ' '
   eol
   infos <- many $ try lineInfo
-  return (podName, infos)
+  return $ PodInfo podName infos
 
 
 lineInfo :: Parser (String, String)
